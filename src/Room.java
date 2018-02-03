@@ -1,3 +1,9 @@
+/**
+ * Interior room - $1000
+ • Ocean view room - $1500
+ • Balcony room - $2000
+ • Suite - $3000
+ */
 public abstract class Room {
     public static final double TAX_RATE_ROOM = .16d;
 
