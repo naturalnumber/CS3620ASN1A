@@ -1,9 +1,12 @@
 public class EnlightenmentPackage extends RoomAddon {
-    protected EnlightenmentPackage(Room toDecorate) {
-        super("Lumberjack Competition Admission", 500d,
-              "This booking includes admission to the Scientology enlightenment tour. " +
-              "(Tour ends upon complete vanquishing of the reactive mind, or a successful " +
-              "credit check and church membership.)",
-              toDecorate);
+    public static final String name = "Enlightenment Tour";
+    public static final double price = 500d;
+    public static final String description =
+            "This booking includes admission to the Scientology enlightenment tour. " +
+            "(Tour ends upon complete vanquishing of the reactive mind, or a successful " +
+            "credit check and church membership.)";
+
+    protected EnlightenmentPackage() {
+        super(name, price, description);
     }
 }

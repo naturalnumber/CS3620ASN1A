@@ -1,10 +1,13 @@
 public class HelicopterPackage extends RoomAddon {
-    protected HelicopterPackage(Room toDecorate) {
-        super("Helicopter Package", 200d,
-              "This booking includes the helicopter glacier tour, " +
-              "featuring a reenactment of Xenu's exile of aliens on ancient earth. " +
-              "(The return of helicopters after mandatory exile reenactment is only " +
-              "guaranteed for church members.)",
-              toDecorate);
+    public static final String name = "Helicopter Package";
+    public static final double price = 200d;
+    public static final String description =
+            "This booking includes the helicopter glacier tour, " +
+            "featuring a reenactment of Xenu's exile of aliens on ancient earth. " +
+            "(The return of helicopters after mandatory exile reenactment is only " +
+            "guaranteed for church members.)";
+
+    protected HelicopterPackage() {
+        super(name, price, description);
     }
 }

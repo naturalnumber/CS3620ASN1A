@@ -1,8 +1,11 @@
 public class BeveragePackage extends RoomAddon {
-    protected BeveragePackage(Room toDecorate) {
-        super("Beverage Package", 700d,
-              "This booking includes the coveted beverage package, " +
-              "featuring unlimited kool-aid.",
-              toDecorate);
+    public static final String name = "Beverage Package";
+    public static final double price = 700d;
+    public static final String description =
+            "This booking includes the coveted beverage package, " +
+            "featuring unlimited Kool-aid.";
+
+    protected BeveragePackage() {
+        super(name, price, description);
     }
 }
