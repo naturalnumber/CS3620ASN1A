@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class KlondikePackage extends RoomAddon {
     public static final String name = "Klondike Package";
     public static final double price = 50d;

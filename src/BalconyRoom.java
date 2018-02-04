@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room.
+ */
 public class BalconyRoom extends Room {
     public static final String name = "Balcony Room";
     public static final double price = 2000d;

@@ -1,16 +1,13 @@
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
-import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
-import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,6 +17,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
 
+/**
+ * The GUI for this assignment.
+ */
 public class CruiseLinePanel extends JPanel {
     // Default heights & widths, in pixels
     public static final  int DEFAULT_DISPLAY_PANEL_HEIGHT  = 200;
@@ -27,29 +27,29 @@ public class CruiseLinePanel extends JPanel {
     public static final  int DEFAULT_ADDON_PANEL_HEIGHT    = 200;
     public static final  int DEFAULT_SELECTION_PANEL_WIDTH = 200;
     public static final  int DEFAULT_DISPLAY_PANEL_WIDTH   = 300;
-    public static final  int INSET                         = 3;
-    public static final  int SPCR                          = 10;
 
     // Default colours
     private static final Color COLOUR_BG                   = Color.WHITE;
-    private static final Color COLOUR_BTNTXT               = Color.BLACK;
 
     // Option lists
     private ArrayList<RoomAction> rooms;
     private ArrayList<AddonAction> addons;
 
-    private Room room;
-
+    // Display areas
     private JLabel subtotal;
     private JLabel taxes;
     private JLabel gratuity;
     private JLabel total;
     private JTextArea description;
 
+    // The room construct
+    private Room room;
+
+    // Test driver
     public static void main (String[] args)
     {
         // Construct and initialize the frame.
-        JFrame frame = new JFrame("Assignment 1 A");
+        JFrame frame = new JFrame("Assignment 1.1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Layout the frame.
@@ -61,6 +61,9 @@ public class CruiseLinePanel extends JPanel {
         frame.setVisible(true);
     }
 
+    /**
+     * The GUI
+     */
     public CruiseLinePanel() {
         this.room = new InteriorRoom();
 
@@ -151,6 +154,9 @@ public class CruiseLinePanel extends JPanel {
         update();
     }
 
+    /**
+     * Updates the GUI.
+     */
     private void update() {
         double subtotal = this.room.getPrice();
         double taxes = this.room.getTax();
@@ -162,9 +168,14 @@ public class CruiseLinePanel extends JPanel {
         this.total.   setText("Total:    $"+(subtotal+taxes+gratuity));
 
         this.description.setText(this.room.getDescription());
+
+        //System.err.println(this.room.getName());
     }
 
     /**
+     * Returns a list of the room actions, each associated with a concrete room type.
+     *
+     * Types:
      * Interior room - $1000
      • Ocean view room - $1500
      • Balcony room - $2000
@@ -183,6 +194,11 @@ public class CruiseLinePanel extends JPanel {
         return rooms;
     }
 
+    /**
+     * Used by the GUI to change the room type.
+     *
+     * @param <R> room type
+     */
     private class RoomAction<R extends Room> extends AbstractAction {
         Class<R> type;
 
@@ -207,6 +223,9 @@ public class CruiseLinePanel extends JPanel {
     }
 
     /**
+     * Returns a list of the room addon actions, each associated with a concrete room addon type.
+     *
+     * Types:
      * Beverage package ($700)
      • Klondike trail guided horseback tour ($50)
      • Helicopter glacier tour ($200)
@@ -229,6 +248,11 @@ public class CruiseLinePanel extends JPanel {
         return addons;
     }
 
+    /**
+     * Used by the GUI to add/remove addons.
+     *
+     * @param <R> addon type
+     */
     private class AddonAction<R extends RoomAddon> extends AbstractAction {
         Class<R> type;
 

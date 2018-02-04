@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class LumberjackPackage extends RoomAddon {
     public static final String name = "Lumberjack Competition Admission";
     public static final double price = 15d;

@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class BeveragePackage extends RoomAddon {
     public static final String name = "Beverage Package";
     public static final double price = 700d;

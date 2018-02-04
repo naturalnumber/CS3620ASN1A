@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class EnlightenmentPackage extends RoomAddon {
     public static final String name = "Enlightenment Tour";
     public static final double price = 500d;

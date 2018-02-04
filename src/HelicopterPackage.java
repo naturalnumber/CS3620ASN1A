@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class HelicopterPackage extends RoomAddon {
     public static final String name = "Helicopter Package";
     public static final double price = 200d;

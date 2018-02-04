@@ -1,3 +1,6 @@
+/**
+ * Concrete implementation of a room addon (a decoration).
+ */
 public class RockClimbingPackage extends RoomAddon {
     public static final String name = "Rock Climbing Lessons";
     public static final double price = 60d;
