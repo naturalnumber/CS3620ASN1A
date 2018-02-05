@@ -9,7 +9,7 @@
  */
 public abstract class Room {
     public static final double TAX_RATE_ROOM = .16d;
-    public static final double GRATUITY_RATE_ROOM = .15d;
+    public static final double GRATUITY_RATE = .15d;
 
     private double price;
     private String name;

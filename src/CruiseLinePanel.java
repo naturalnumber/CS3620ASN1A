@@ -160,7 +160,7 @@ public class CruiseLinePanel extends JPanel {
     private void update() {
         double subtotal = this.room.getPrice();
         double taxes = this.room.getTax();
-        double gratuity = subtotal*Room.GRATUITY_RATE_ROOM;
+        double gratuity = subtotal*Room.GRATUITY_RATE;
 
         this.subtotal.setText("Subtotal: $"+subtotal);
         this.taxes.   setText("Taxes:    $"+taxes);

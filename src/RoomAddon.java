@@ -35,7 +35,7 @@ public abstract class RoomAddon extends Room {
     @Override
     public double getTax() {
         if (isValid())
-            return this.decorated.getPrice() * TAX_RATE_ADDON + super.getTax();
+            return this.decorated.getTax() + super.getPrice() * TAX_RATE_ADDON;
         else
             return 0d;
     }
