@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="839.5900297619045" y="1075.0">KlondikePackage</node>
+    <node x="484.2499999999999" y="1086.5">CruiseLinePanel.AddonAction</node>
+    <node x="1544.5900297619046" y="1075.0">HelicopterPackage</node>
+    <node x="1580.5900297619046" y="682.5">BalconyRoom</node>
+    <node x="0.0" y="1086.5">CruiseLinePanel.RoomAction</node>
+    <node x="1775.5900297619046" y="1075.0">RockClimbingPackage</node>
+    <node x="1058.5900297619046" y="1075.0">BeveragePackage</node>
+    <node x="300.9999999999999" y="478.0">CruiseLinePanel</node>
+    <node x="793.4650297619044" y="0.0">Room</node>
+    <node x="1246.5900297619046" y="549.5">RoomAddon</node>
+    <node x="972.9650297619045" y="682.5">SuiteRoom</node>
+    <node x="752.9650297619045" y="682.5">OceanViewRoom</node>
+    <node x="2028.5900297619046" y="1075.0">LumberjackPackage</node>
+    <node x="88.99999999999989" y="682.5">InteriorRoom</node>
+    <node x="1282.5900297619046" y="1075.0">EnlightenmentPackage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="HelicopterPackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="1650.0900297619046" y="1055.0" />
+      <point x="1448.4471726190473" y="1055.0" />
+      <point x="44.85714285714289" y="197.0" />
+    </edge>
+    <edge source="CruiseLinePanel.AddonAction" target="RoomAddon">
+      <point x="78.5" y="-52.5" />
+      <point x="719.7499999999999" y="1035.0" />
+      <point x="1269.0186011904761" y="1035.0" />
+      <point x="-134.57142857142844" y="197.0" />
+    </edge>
+    <edge source="RoomAddon" target="Room">
+      <point x="0.0" y="-197.0" />
+      <point x="1403.5900297619046" y="448.0" />
+      <point x="1044.7150297619044" y="448.0" />
+      <point x="83.75" y="209.0" />
+    </edge>
+    <edge source="InteriorRoom" target="Room">
+      <point x="0.0" y="-64.0" />
+      <point x="184.9999999999999" y="448.0" />
+      <point x="877.2150297619044" y="448.0" />
+      <point x="-83.75" y="209.0" />
+    </edge>
+    <edge source="EnlightenmentPackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="0.0" y="197.0" />
+    </edge>
+    <edge source="BalconyRoom" target="Room">
+      <point x="0.0" y="-64.0" />
+      <point x="1676.5900297619046" y="438.0" />
+      <point x="1100.5483630952378" y="438.0" />
+      <point x="139.58333333333348" y="209.0" />
+    </edge>
+    <edge source="CruiseLinePanel.AddonAction" target="CruiseLinePanel">
+      <point x="-78.5" y="-52.5" />
+      <point x="87.25" y="268.5" />
+    </edge>
+    <edge source="SuiteRoom" target="Room">
+      <point x="0.0" y="-64.0" />
+      <point x="1068.9650297619046" y="458.0" />
+      <point x="988.8816964285711" y="458.0" />
+      <point x="27.916666666666742" y="209.0" />
+    </edge>
+    <edge source="LumberjackPackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="2138.0900297619046" y="1035.0" />
+      <point x="1538.161458333333" y="1035.0" />
+      <point x="134.57142857142867" y="197.0" />
+    </edge>
+    <edge source="RockClimbingPackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="1892.0900297619046" y="1045.0" />
+      <point x="1493.3043154761904" y="1045.0" />
+      <point x="89.71428571428578" y="197.0" />
+    </edge>
+    <edge source="BeveragePackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="1160.5900297619046" y="1055.0" />
+      <point x="1358.7328869047615" y="1055.0" />
+      <point x="-44.85714285714289" y="197.0" />
+    </edge>
+    <edge source="KlondikePackage" target="RoomAddon">
+      <point x="0.0" y="-64.0" />
+      <point x="939.0900297619045" y="1045.0" />
+      <point x="1313.8757440476188" y="1045.0" />
+      <point x="-89.71428571428578" y="197.0" />
+    </edge>
+    <edge source="CruiseLinePanel.RoomAction" target="CruiseLinePanel">
+      <point x="78.5" y="-52.5" />
+      <point x="235.5" y="1055.0" />
+      <point x="388.2499999999999" y="1055.0" />
+      <point x="-87.25" y="268.5" />
+    </edge>
+    <edge source="OceanViewRoom" target="Room">
+      <point x="0.0" y="-64.0" />
+      <point x="852.9650297619045" y="458.0" />
+      <point x="933.0483630952378" y="458.0" />
+      <point x="-27.91666666666663" y="209.0" />
+    </edge>
+    <edge source="CruiseLinePanel.RoomAction" target="Room">
+      <point x="-78.5" y="-52.5" />
+      <point x="78.49999999999989" y="438.0" />
+      <point x="821.3816964285711" y="438.0" />
+      <point x="-139.58333333333337" y="209.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6368863334807607" x="1147.9774305555554" y="639.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
