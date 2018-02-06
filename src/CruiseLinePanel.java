@@ -27,6 +27,8 @@ public class CruiseLinePanel extends JPanel {
     public static final  int DEFAULT_ADDON_PANEL_HEIGHT    = 200;
     public static final  int DEFAULT_SELECTION_PANEL_WIDTH = 200;
     public static final  int DEFAULT_DISPLAY_PANEL_WIDTH   = 300;
+    public static final  int DEFAULT_TEXT_ROWS             = 20;
+    public static final  int DEFAULT_TEXT_COLS             = 100;
 
     // Default colours
     private static final Color COLOUR_BG                   = Color.WHITE;
@@ -117,7 +119,7 @@ public class CruiseLinePanel extends JPanel {
         this.taxes = new JLabel();
         this.gratuity = new JLabel();
         this.total = new JLabel();
-        this.description = new JTextArea(20, 100); // Todo: constants
+        this.description = new JTextArea(DEFAULT_TEXT_ROWS, DEFAULT_TEXT_COLS);
 
         this.description.setLineWrap(true);
         this.description.setEditable(false);
